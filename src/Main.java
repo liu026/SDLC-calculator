@@ -26,6 +26,17 @@ public class Main{
         else if(operator.equals("*"))
         {
         	System.out.print(Calculator.multiply(number1, number2));
-    	} 
+    	}
+        else if(operator.equals("/"))
+        {
+        	
+        	try{
+        		System.out.print(Calculator.divide(number1, number2));
+        	}
+        	catch(ArithmeticException e)
+            {
+                System.out.println("No division by zero");
+            }
+        }
 	}
 }
