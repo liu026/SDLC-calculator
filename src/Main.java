@@ -23,6 +23,9 @@ public class Main{
         {
         	System.out.print(Calculator.subtract(number1, number2));
     	}
-        
+        else if(operator.equals("*"))
+        {
+        	System.out.print(Calculator.multiply(number1, number2));
+    	} 
 	}
 }
