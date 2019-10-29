@@ -52,5 +52,17 @@ class CalculatorTest {
 		assertNotEquals(-16, Calculator.divide(-4, -4), "error in divide()");
 		assertNotEquals(9, Calculator.divide(0, 0), "error in divide()");
 	}
+	@Test
+	public void remainderTestPass() {
+		assertEquals(1, Calculator.findremainder(1, 2), "error in findremainder()");
+		assertEquals(-1, Calculator.findremainder(-1,-2), "error in findremainder()");
+		assertEquals(0, Calculator.findremainder(4, 2), "error in findremainder()");
+	}
+	@Test
+	public void remainderTestFail() {
+		assertNotEquals(0, Calculator.findremainder(1, 2), "error in findremainder()");
+		assertNotEquals(-16, Calculator.findremainder(-4, -4), "error in findremainder()");
+		assertNotEquals(4, Calculator.findremainder(0, 4), "error in findremainder()");
+	}
 }
 

@@ -35,8 +35,22 @@ public class Main{
         	}
         	catch(ArithmeticException e)
             {
-                System.out.println("Cannot divide by zero");
+                System.out.print("Cannot divide by zero");
             }
         }
-	}
+        else if(operator.equals("%"))
+        {
+        	
+        	try{
+        		System.out.print(Calculator.findremainder(number1, number2));
+        	}
+        	catch(ArithmeticException e)
+            {
+                System.out.print("Cannot divide by zero");
+            }
+        }
+        else
+        	System.out.print("Invalid sign");
+        }
+	
 }
