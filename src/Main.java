@@ -35,7 +35,7 @@ public class Main{
         	}
         	catch(ArithmeticException e)
             {
-                System.out.println("No division by zero");
+                System.out.println("Cannot divide by zero");
             }
         }
 	}
