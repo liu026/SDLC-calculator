@@ -1,3 +1,4 @@
+package com.mycompany.Main;
 
 public class Calculator{
 		

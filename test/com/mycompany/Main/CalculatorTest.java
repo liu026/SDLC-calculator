@@ -1,3 +1,5 @@
+package com.mycompany.Main;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
